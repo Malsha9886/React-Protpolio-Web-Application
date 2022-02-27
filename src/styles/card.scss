@@ -1,0 +1,50 @@
+.card {
+  width: 80%;
+  height: 100%;
+  overflow: hidden !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: goldenrod;
+  border-radius: 5%;
+  border-width: 2ch;
+  border-color: rgb(1, 20, 20);
+  
+
+
+  .content {
+    font-family: "Open Sans";
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+    transform: translate(0, 20px);
+    cursor: pointer;
+    h1 {
+      font-size: 14px;
+      color: white;
+    }
+    p {
+      font-size: 10px;
+      color: white;
+      margin-bottom: 20px;
+    }
+    img {
+      size: 6cm;
+    }
+
+    .btn {
+      background-color: black;
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+    }
+    &:hover {
+      opacity: 1;
+      transform: translate(0, 0px);
+    }
+  }
+}

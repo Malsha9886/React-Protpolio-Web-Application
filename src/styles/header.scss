@@ -1,0 +1,114 @@
+.header-wrapper {
+  width: 80vw;
+  height: 30vw;
+  margin-top: 5vh;
+  display:inline;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 0 10px 0 rgba(236, 139, 11, 0.973);
+  background: "#fff";
+
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+ 
+  @include media(">=phone", "<lgphone") {
+    flex-direction: column-reverse;
+  }
+  @include media(">=lgphone", "<tablet") {
+    flex-direction: column-reverse;
+  }
+  @include media(">=tablet", "<desktop") {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+
+  h2 {
+    font-size: 3rem;
+    color: white;
+    text-align: left;
+    padding: 10px 10px;
+    padding-bottom: -10%;
+    margin-top: 2%;
+    
+    @include media(">=phone", "<lgphone") {
+      font-size: 14px;
+    }
+    @include media(">=lgphone", "<tablet") {
+      font-size: 16px;
+    }
+    @include media(">=tablet", "<desktop") {
+      font-size: 16px;
+    }
+  }
+  .heading-wrapper {
+    h1 {
+      
+      font-size: 2.5rem;
+      text-decoration: wavy;
+      line-height: 10px;
+      font-weight: bold 3.5em "Marko One", Georgia, serif;
+      color: white;
+      text-shadow:.05em .05em .1em rgba(236, 139, 11, 0.973);
+
+      text-align: left;
+      padding: 10px 10px;
+
+      @include media(">=phone", "<lgphone") {
+        font-size: 1.5rem;
+        line-height: 10px;
+      }
+      @include media(">=lgphone", "<tablet") {
+        font-size: 1.5rem;
+        line-height: 10px;
+      }
+      @include media(">=tablet", "<desktop") {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  p {
+    width: 50%;
+    text-align: left;
+    overflow: hidden;
+    margin-top:  -25%;
+    color: white;
+    padding-left:5%;
+    @include media(">=phone", "<lgphone") {
+      font-size: 12px;
+      width: 100%;
+    }
+    @include media(">=lgphone", "<tablet") {
+      font-size: 12px;
+      width: 100%;
+    }
+    @include media(">=tablet", "<desktop") {
+      font-size: 14px;
+      width: 100%;
+    }
+  }
+  .image-wrapper {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    overflow: hidden;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top:  -20%;
+    margin-left: 60%;
+    text-align: center;
+    color: red;
+    @include media(">=phone", "<lgphone") {
+      width: 100%;
+    }
+    @include media(">=lgphone", "<tablet") {
+      width: 100%;
+    }
+    @include media(">=tablet", "<desktop") {
+      width: 100%;
+    }
+  }
+}
