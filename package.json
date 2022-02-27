@@ -1,5 +1,6 @@
 {
-  "name": "react-portfolio-template",
+  "name": "react-portfolio",
+  "homepage": "https://reactProtfolio.github.io",
   "private": true,
   "description": "Portfolio Template For Awesome Peoples",
   "version": "0.1.0",
@@ -16,6 +17,7 @@
     "gatsby-plugin-smoothscroll": "^1.2.0",
     "gatsby-source-filesystem": "^2.5.0",
     "gatsby-transformer-sharp": "^2.6.0",
+    "gh-pages": "^3.2.3",
     "node-sass": "^4.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
@@ -38,7 +40,9 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d public -r https://github.com/Malsha9886/protfolio.git.io.git"
   },
   "repository": {
     "type": "git",
