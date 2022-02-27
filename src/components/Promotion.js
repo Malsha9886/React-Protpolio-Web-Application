@@ -22,9 +22,8 @@ const Promotion = () => {
             <div className="skills-grid">
             {data.skills1.map((skill, index) => (
               <div className="skill" key={index}>
-                <h4>{skill.h1}</h4>
                 <img src={skill.img} alt="css"></img>
-                
+
                 {/* <p>{skill.para}</p> */}
               </div>
             ))}
